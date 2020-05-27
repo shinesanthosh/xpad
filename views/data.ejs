@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="mn.css" />
+		<script src="mn.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Xpad</title>
+	</head>
+	<body>
+
+		<% for(var i=0; i<arr.length; i++) {%>
+            <div class="box" onclick="redir('<%=key[i]%>')">
+				<p class="name"><%= arr[i].name %></p>
+                <p class="Time"><%= arr[i].time %></p>
+            </div>
+			<% } %>
+		
+		<form>
+			<input
+				type="button"
+				value="Add Data"
+				class="sbmbtn med"
+				onclick="red('/addData')"
+			/>
+			</form>
+	</body>
+</html>

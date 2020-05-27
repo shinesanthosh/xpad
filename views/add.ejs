@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="mn.css" />
+		<script src="mn.js"></script>
+		<title>Xpad</title>
+	</head>
+	<body>
+		<form method="POST" action="/addData">
+			<input type="text" name="name" placeholder="Name" required />
+			<input type="text" name="dest" placeholder="Destination" required />
+			<input type="date" name="date" placeholder="Launch Date" required />
+			<input type="time" name="time" placeholder="Launch Time" required />
+			<input type="text" name="type" placeholder="Type" required />
+			<input type="text" name="port" placeholder="SpacePort" required />
+			<input type="submit" class="sbmbtn" />
+			<input type="reset" class="sbmbtn" />
+			<input
+				type="button"
+				value="View Launchpad"
+				class="sbmbtn med"
+				onclick="red('/')"
+			/>
+		</form>
+	</body>
+</html>

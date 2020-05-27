@@ -1,0 +1,108 @@
+body {
+	background: #000;
+	text-align: center;
+	font-family: sans-serif;
+}
+
+.box {
+	border: 3px solid #666;
+	border-radius: 3px;
+	color: #999;
+	font-weight: bold;
+	font-size: 30px;
+	text-align: center;
+	width: 50%;
+	height: 200px;
+	margin-left: 25%;
+	margin-top: 10px;
+	cursor: pointer;
+	overflow: hidden;
+	display: block;
+	transition: color 0.3s 0s, border-color 0.3s 0s;
+}
+
+.box:hover {
+	color: #fff;
+	border-color: #fff;
+}
+
+form {
+	margin-top: 50px;
+}
+
+form>input {
+	font-size: 20px;
+	background: #000;
+	border: 3px solid #666;
+	border-radius: 3px;
+	color: #999;
+	text-align: center;
+	width: 40%;
+	height: 50px;
+	margin-left: 30%;
+	margin-top: 10px;
+	cursor: pointer;
+	display: block;
+	transition: color 0.3s 0s, border-color 0.3s 0s, border 0.3s 0s, width 0.3s 0s,
+		height 0.3s 0s;
+}
+
+form>input:focus {
+	border-color: #fff;
+	color: #fff;
+	height: 55px;
+}
+
+.sbmbtn {
+	border-color: #fff;
+	color: #fff;
+	margin-top: 20px;
+	transition: background 0.3s 0s, color 0.3s 0s;
+}
+
+.sbmbtn:hover {
+	color: #000;
+	background: #fff;
+}
+
+.med {
+	margin-top: 50px;
+}
+
+.link {
+	border-color: #fff;
+	text-decoration: none;
+	font-size: 20px;
+	margin-top: 75px;
+	color: #999;
+	height: 30px;
+	transition: background 0.3s 0s, color 0.3s 0s;
+}
+
+.link:hover {
+	background: #fff;
+	color: #000;
+}
+
+.box2 {
+	height: 500px;
+	color: #fff;
+	border-color: #fff;
+}
+
+.dang {
+	color: #f00;
+	border-color: #f00;
+}
+
+.dang:hover {
+	color: #fff;
+	background: #f00;
+	border-color: #f00;
+}
+
+.dang:focus {
+	color: #fff;
+	background: #f00;
+	border-color: #f00;
+}

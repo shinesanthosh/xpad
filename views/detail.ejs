@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="mn.css" />
+		<script src="mn.js"></script>
+		<script>
+			window.addEventListener('load', timer);
+		</script>
+		<title>XPad</title>
+	</head>
+	<body>
+		<div class="box box2" id="box">
+			<p class="name">Name: <%=data.name%></p>
+			<p class="time">Launch Time: <span id="time"><%=data.time%></span></p>
+			<p class="date">Launch Date: <span id="date"><%=data.date%></span></p>
+			<p class="dest">Destination: <%=data.dest%></p>
+			<p class="type">Type of Vehicle: <%=data.type%></p>
+			<p class="port">Space Port: <%=data.port%></p>
+			<p><span id="counter"></span></p>
+		</div>
+		<form>
+			<input
+				type="button"
+				value="View Launchpad"
+				class="sbmbtn med"
+				onclick="red('/')"
+			/>
+			<input
+				type="button"
+				value="Delete"
+				class="sbmbtn med dang"
+				onclick="del('<%=id%>')"
+			/>
+		</form>
+	</body>
+</html>
